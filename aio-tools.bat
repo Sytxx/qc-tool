@@ -18,3 +18,17 @@ if not '%choice%'=='' set choice=%choice:~0,1%
 if '%choice%'==' goto spek
 if '%choice%'==' goto wifilist
 if '%choice%'==' goto qcapp
+REM : MORE OPTION COMING SOON
+echo.
+echo '%choice%' is not available.
+goto menuawal.
+cls && echo this option is available, please try again. && goto menuawal
+
+:spek
+cls && start spek.bat && echo spek bat succesfully open && timeout /t 2 > null && goto menuawal
+
+:wifilist
+cls && start wifilist.bat && echo wifilist succesfully open && timeout /t 2 > null && goto menuawal
+
+:qcapp
+cls && start qcapp.bat && echo qcapp succesfully open && timeout /t 2 > null && goto menuawal
