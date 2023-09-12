@@ -13,4 +13,8 @@ cd sytx
 chcp 65001 >nul 2>&1
 cls
 set choice=
-set /p choice=Your choice:
+set /p choice=Your choice: %COL%[35m
+if not '%choice%'=='' set choice=%choice:~0,1%
+if '%choice%'==' goto spek
+if '%choice%'==' goto wifilist
+if '%choice%'==' goto qcapp
